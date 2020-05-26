@@ -45,4 +45,5 @@
 ## FAQ k instalaci
 
 **Q** - Proč je to tak složitý?
+
 **A** - Na Linuxu stačí v obou případech pouze překopírovat pár příkazů do terminálu. Na Windowsu se to komplikuje tou nutností nainstalovat Python. Problém je, že první co oficiální stránka Python nejdřív nabídne je 32-bitová instalačka, potom instalace samotná je složitější než na Linuxu kvůli zastaralé Windowsácké infrastruktuře a jedno s druhým. Neznám žádný způsob jak to na Windowsu ulehčit bez psaní automatizovaného skriptu nebo používání metod potenciálně vedoucích k nestabilním a špatně aktualizovatelným výsledkům.
