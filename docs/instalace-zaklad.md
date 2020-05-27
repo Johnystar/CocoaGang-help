@@ -30,7 +30,7 @@ Pro účast jednoho z promítání Cocoa Gang Cinema potřebuješ:
 ## Kompatibilní multimediální přehravače
 
 - [mpv](instalace-zaklad-mpv.md) - funguje se Syncplayem nejlépe
-- [VLC](instalace-zaklad-vlc.md) - univerzální alternative
+- [VLC](instalace-zaklad-vlc.md) - univerzální alternativa
 
 ### Jiné
 
