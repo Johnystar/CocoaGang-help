@@ -17,4 +17,4 @@
 
 ### ⚠️ Pokročilé
 
-- [🌐 YouTube (10-15 min)](instalace-youtube.md)
+- [🌐 YouTube a další online video (10-15 min)](instalace-youtube.md)

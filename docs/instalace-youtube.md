@@ -1,11 +1,24 @@
-# YouTube videa
+# YouTube videa a další
 
-Na přehrávání YouTube videí přes Syncplay potřebuješ:
+Na přehrávání online videí přes Syncplay potřebuješ:
 
 - youtube-dl (instalace popsána níže)
 - mpv ([návod k instalaci zde](instalace-zaklad.md#mpv-funguje-se-syncplayem-nejlepe))
 
-## youtube-dl
+Po nastavení lze přes Syncplay sledovat vše co youtube-dl zvládne, například:
+
+- YouTube (videa, kanály, playlisty, livestreamy, ..)
+- Twitch (klipy, streamy, videa, ...)
+- Reddit (posty)
+- Vimeo (videa, alba, kanály, ...)
+- Twitter (broadcasty, ...)
+- [obrovskou hromadu dalších](https://ytdl-org.github.io/youtube-dl/supportedsites.html) (skoro až moc xd)
+
+Ano, instalace není triviální, ale rozjede to ve výsledku skoro cokoliv. V případě problémů se obraťte na Johnystar.
+
+## Instalace youtube-dl
+
+**Poznámka**: youtube-dl je skvělá terminálová aplikace napsaná v Pythonu. mpv ji používá pro získávání videí a streamů z cílových stránek. Jako terminálová aplikace funguje velmi dobře a je rychlejší na stahování videí než webové stránky - pokud máš zájem tak tě rád naučím ji používat!
 
 ### Windows
 
@@ -28,3 +41,18 @@ Na přehrávání YouTube videí přes Syncplay potřebuješ:
 - v terminálu:
 	- ``sudo apt get update && sudo apt get upgrade && sudo apt install -y python3 python3-pip ffmpeg``
 	- ``python3 -m pip install -U youtube-dl``
+
+## Jak použít
+
+Normálně když chceš pustit přes Syncplay video za pomocí mpv:
+
+- zapneš Syncplay
+- připojíš se
+- do mpv přesuneš soubor
+
+Online videa se pouští podobně (je více způsobů, ale tento je noob-friendly, jednoduchý na pochopení a i na popsání):
+
+- zapneš Syncplay
+- připojíš se
+- (najdeš si URL videa, playlistu, streamu, ... na který se chceš podívat)
+- přesuneš URL (text) do mpv (buď přímo z URL baru prolížeče a nebo například z textového editoru - označíš a přetáhneš do mpv)

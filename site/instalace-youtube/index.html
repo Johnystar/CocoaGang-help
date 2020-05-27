@@ -8,14 +8,14 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>🌐 YouTube (10-15 min) - Cocoa Gang Cinema</title>
+  <title>🌐 Online videa (10-15 min) - Cocoa Gang Cinema</title>
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\ud83c\udf10 YouTube (10-15 min)";
+    var mkdocs_page_name = "\ud83c\udf10 Online videa (10-15 min)";
     var mkdocs_page_input_path = "instalace-youtube.md";
     var mkdocs_page_url = null;
   </script>
@@ -77,14 +77,16 @@
     <ul class="subnav">
                 <li class=" current">
                     
-    <a class="current" href="./">🌐 YouTube (10-15 min)</a>
+    <a class="current" href="./">🌐 Online videa (10-15 min)</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#youtube-videa">YouTube videa</a></li>
+    <li class="toctree-l3"><a href="#youtube-videa-a-dalsi">YouTube videa a další</a></li>
     
         <ul>
         
-            <li><a class="toctree-l4" href="#youtube-dl">youtube-dl</a></li>
+            <li><a class="toctree-l4" href="#instalace-youtube-dl">Instalace youtube-dl</a></li>
+        
+            <li><a class="toctree-l4" href="#jak-pouzit">Jak použít</a></li>
         
         </ul>
     
@@ -120,7 +122,7 @@
         
       
     
-    <li>🌐 YouTube (10-15 min)</li>
+    <li>🌐 Online videa (10-15 min)</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -130,13 +132,24 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="youtube-videa">YouTube videa</h1>
-<p>Na přehrávání YouTube videí přes Syncplay potřebuješ:</p>
+                <h1 id="youtube-videa-a-dalsi">YouTube videa a další</h1>
+<p>Na přehrávání online videí přes Syncplay potřebuješ:</p>
 <ul>
 <li>youtube-dl (instalace popsána níže)</li>
 <li>mpv (<a href="../instalace-zaklad/#mpv-funguje-se-syncplayem-nejlepe">návod k instalaci zde</a>)</li>
 </ul>
-<h2 id="youtube-dl">youtube-dl</h2>
+<p>Po nastavení lze přes Syncplay sledovat vše co youtube-dl zvládne, například:</p>
+<ul>
+<li>YouTube (videa, kanály, playlisty, livestreamy, ..)</li>
+<li>Twitch (klipy, streamy, videa, ...)</li>
+<li>Reddit (posty)</li>
+<li>Vimeo (videa, alba, kanály, ...)</li>
+<li>Twitter (broadcasty, ...)</li>
+<li><a href="https://ytdl-org.github.io/youtube-dl/supportedsites.html">obrovskou hromadu dalších</a> (skoro až moc xd)</li>
+</ul>
+<p>Ano, instalace není triviální, ale rozjede to ve výsledku skoro cokoliv. V případě problémů se obraťte na Johnystar.</p>
+<h2 id="instalace-youtube-dl">Instalace youtube-dl</h2>
+<p><strong>Poznámka</strong>: youtube-dl je skvělá terminálová aplikace napsaná v Pythonu. mpv ji používá pro získávání videí a streamů z cílových stránek. Jako terminálová aplikace funguje velmi dobře a je rychlejší na stahování videí než webové stránky - pokud máš zájem tak tě rád naučím ji používat!</p>
 <h3 id="windows">Windows</h3>
 <ul>
 <li><a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> - NE HORNÍ TLAČÍTKO, místo toho list "Looking for a specific release?" a vyber nejnovější verzi vlevo, zaskroluj dolů k "Files" a vyber "Windows x86-64 executable installer"</li>
@@ -164,6 +177,20 @@
 <li><code>python3 -m pip install -U youtube-dl</code></li>
 </ul>
 </li>
+</ul>
+<h2 id="jak-pouzit">Jak použít</h2>
+<p>Normálně když chceš pustit přes Syncplay video za pomocí mpv:</p>
+<ul>
+<li>zapneš Syncplay</li>
+<li>připojíš se</li>
+<li>do mpv přesuneš soubor</li>
+</ul>
+<p>Online videa se pouští podobně (je více způsobů, ale tento je noob-friendly, jednoduchý na pochopení a i na popsání):</p>
+<ul>
+<li>zapneš Syncplay</li>
+<li>připojíš se</li>
+<li>(najdeš si URL videa, playlistu, streamu, ... na který se chceš podívat)</li>
+<li>přesuneš URL (text) do mpv (buď přímo z URL baru prolížeče a nebo například z textového editoru - označíš a přetáhneš do mpv)</li>
 </ul>
               
             </div>

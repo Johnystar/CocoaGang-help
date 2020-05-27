@@ -57,4 +57,4 @@ Pokud jen trochu možné tak **silně nedoporučuji** používat nic jiného ne�
 
 Na stránce Syncplay si lze najít že podporují také MPC-HC a MPC-BE, oba tyto přehravače mají ovšem různé nevýhody oproti VLC i mpv.
 
-mpv má několik výhod jako třeba podporu [přehrávání i YouTube videí](instalace-youtube.md) a built-in podporu na Syncplay chat. Nevýhodou ovšem může pro některé být, že většina ovládání se skrývá za klávesovými zkratkami, ty ovšem po naučení se fungují vždy a jsou rychlejší než používat myš.
+mpv má několik výhod jako třeba podporu [přehrávání i YouTube videí, Twitch streamů, ...](instalace-youtube.md) a built-in podporu na Syncplay chat. Nevýhodou ovšem může pro některé být, že většina ovládání se skrývá za klávesovými zkratkami, ty ovšem po naučení se fungují vždy a jsou rychlejší než používat myš.
