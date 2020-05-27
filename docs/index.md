@@ -6,7 +6,8 @@
 
 ### 🔗 Linky
 
-- [📝 Chceš se s ostatními Cocoa Gang členy podívat na něco konkrétního?](https://forms.gle/WrTeCZ7ebcMWT6Mt6)
+- [📝 Chceš se s ostatními Cocoa Gang členy podívat na něco konkrétního? - Google Forms](https://forms.gle/WrTeCZ7ebcMWT6Mt6)
+- [📅 Plán promítání - Google Calendar](https://calendar.google.com/calendar?cid=c3RlZmVrLmN6X2lzYWptMWU2cWF0Z2hzNXNvYjZhaWhnbmM0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20)
 
 ### 📗 Základní informace
 
