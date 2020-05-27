@@ -22,7 +22,16 @@ Ano, instalace není triviální, ale rozjede to ve výsledku skoro cokoliv. V p
 
 ### Windows
 
-- <https://www.python.org/downloads/> - NE HORNÍ TLAČÍTKO, místo toho list "Looking for a specific release?" a vyber nejnovější verzi vlevo, zaskroluj dolů k "Files" a vyber "Windows x86-64 executable installer"
+Link na stránku s Pythonem: <https://www.python.org/downloads/>. Zaskroluj úplně dolů dokud nenajdeš tohle:
+
+![rip obrázek, chjo](python-verze.png)
+
+Jakmile vybereš tu správnou verzi a klikneš na ní (v případě obrázku klikneš na text "Python 3.(něco)"), tak zaskroluj dolů dokud nenajdeš tohle:
+
+![rip obrázek, chjo](python-64.png)
+
+Tak jak je na obrázku naznačeno, chceš vybrat verzi "Windows x86-64 executable installer".
+
 - instalace:
 	- customize installation
 	- pip ANO

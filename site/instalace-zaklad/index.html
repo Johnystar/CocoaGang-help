@@ -157,9 +157,15 @@
 <p>(poznámka pro technicky zdatnější: v této sekci instalujeme mpv přes scoop.sh, protože shinchiro buildy se Syncplayem nefungují: <a href="https://github.com/Syncplay/syncplay/issues/313)">https://github.com/Syncplay/syncplay/issues/313)</a>)</p>
 <ul>
 <li>v Start menu vyhledej "Windows Powershell" a otevři:<ul>
-<li><code>Set-ExecutionPolicy RemoteSigned -scope CurrentUser</code> a potvrď</li>
+<li><code>Set-ExecutionPolicy RemoteSigned -scope CurrentUser</code> a potvrď (vyber tu nejvíce kladnou možnost - chceš provést změny) (po potvrzení by se nic dalšího vypsat již nemělo)</li>
 <li><code>Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')</code></li>
-<li><code>scoop install https://raw.githubusercontent.com/lukesampson/scoop-extras/master/bucket/mpv.json</code></li>
+<li><code>scoop install https://raw.githubusercontent.com/lukesampson/scoop-extras/master/bucket/mpv.json</code><ul>
+<li><u>pokud se ti vypíše</u> něco jako <code>Ke vzdálenému serveru se nelze připojit.</code>, pokračuj následovně (pokud ne, tak vše fungovalo a máš hotovo)</li>
+<li><code>scoop uninstall mpv</code></li>
+<li>počkej třeba 5 minut a zkus poslední příkaz (<code>scoop install https://raw.githubusercontent.com/lukesampson/scoop-extras/master/bucket/mpv.json</code>)</li>
+<li>pokud to stále vypisuje <code>Ke vzdálenému serveru se nelze připojit.</code>, tak buď to můžeš zkusit ještě jednou (zase ten uninstall a potom install) nebo mi napiš</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -177,8 +183,10 @@
 </ul>
 <h4 id="linux-debian-ubuntu-mint-elementary-popos_2">Linux - Debian (Ubuntu, Mint, Elementary, Pop!os, ...)</h4>
 <ul>
-<li>v terminálu:
-w</li>
+<li>v terminálu:<ul>
+<li><code>sudo apt get update &amp;&amp; sudo apt get upgrade &amp;&amp; sudo apt install -y mpv</code></li>
+</ul>
+</li>
 </ul>
 <h3 id="jine">Jiné</h3>
 <p>Pokud jen trochu možné tak <strong>silně nedoporučuji</strong> používat nic jiného než VLC nebo mpv (s tím že mpv funguje nejlépe, akorát má na Windowsu lehce komplikovanější, ačokliv stále jednoduchou, instalaci).</p>

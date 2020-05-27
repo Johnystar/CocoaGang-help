@@ -31,9 +31,13 @@ Pro účast jednoho z promítání Cocoa Gang Cinema potřebuješ:
 (poznámka pro technicky zdatnější: v této sekci instalujeme mpv přes scoop.sh, protože shinchiro buildy se Syncplayem nefungují: <https://github.com/Syncplay/syncplay/issues/313)>)
 
 - v Start menu vyhledej "Windows Powershell" a otevři:
-	- ``Set-ExecutionPolicy RemoteSigned -scope CurrentUser`` a potvrď
+	- ``Set-ExecutionPolicy RemoteSigned -scope CurrentUser`` a potvrď (vyber tu nejvíce kladnou možnost - chceš provést změny) (po potvrzení by se nic dalšího vypsat již nemělo)
 	- ``Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')``
 	- ``scoop install https://raw.githubusercontent.com/lukesampson/scoop-extras/master/bucket/mpv.json``
+		- <u>pokud se ti vypíše</u> něco jako ``Ke vzdálenému serveru se nelze připojit.``, pokračuj následovně (pokud ne, tak vše fungovalo a máš hotovo)
+		- ``scoop uninstall mpv``
+		- počkej třeba 5 minut a zkus poslední příkaz (``scoop install https://raw.githubusercontent.com/lukesampson/scoop-extras/master/bucket/mpv.json``)
+		- pokud to stále vypisuje ``Ke vzdálenému serveru se nelze připojit.``, tak buď to můžeš zkusit ještě jednou (zase ten uninstall a potom install) nebo mi napiš
 
 #### Linux - Debian (Ubuntu, Mint, Elementary, Pop!os, ...)
 
@@ -49,7 +53,7 @@ Pro účast jednoho z promítání Cocoa Gang Cinema potřebuješ:
 #### Linux - Debian (Ubuntu, Mint, Elementary, Pop!os, ...)
 
 - v terminálu:
-w
+	- ``sudo apt get update && sudo apt get upgrade && sudo apt install -y mpv``
 
 ### Jiné
 
