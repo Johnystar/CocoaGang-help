@@ -22,7 +22,7 @@ Základy ovládání (americké rozložení klávesnice):
 
 ### Windows - instalace mpv
 
-(poznámka pro technicky zdatnější: v této sekci instalujeme mpv přes scoop.sh, protože shinchiro buildy se Syncplayem nefungují: <https://github.com/Syncplay/syncplay/issues/313)>)
+(poznámka pro technicky zdatnější: v této sekci instalujeme mpv přes scoop.sh, protože shinchiro buildy se Syncplayem nefungují: <https://github.com/Syncplay/syncplay/issues/313>)
 
 - v Start menu vyhledej "Windows Powershell" a otevři:
 	- ``Set-ExecutionPolicy RemoteSigned -scope CurrentUser`` a potvrď (vyber tu nejvíce kladnou možnost - chceš provést změny) (po potvrzení by se nic dalšího vypsat již nemělo)
