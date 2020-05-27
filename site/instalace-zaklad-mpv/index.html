@@ -8,15 +8,15 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>⬇️ Základní instalace (5-10 min) - Cocoa Gang Cinema</title>
+  <title>mpv - Cocoa Gang Cinema</title>
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\u2b07\ufe0f Z\u00e1kladn\u00ed instalace (5-10 min)";
-    var mkdocs_page_input_path = "instalace-zaklad.md";
+    var mkdocs_page_name = "mpv";
+    var mkdocs_page_input_path = "instalace-zaklad-mpv.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -66,23 +66,9 @@
     </ul>
 	    </li>
           
-            <li class="toctree-l1 current">
+            <li class="toctree-l1">
 		
-    <a class="current" href="./">⬇️ Základní instalace (5-10 min)</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#instalace">Instalace</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#syncplay">Syncplay</a></li>
-        
-            <li><a class="toctree-l3" href="#kompatibilni-multimedialni-prehravace">Kompatibilní multimediální přehravače</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../instalace-zaklad/">⬇️ Základní instalace (5-10 min)</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -118,7 +104,7 @@
     
       
     
-    <li>⬇️ Základní instalace (5-10 min)</li>
+    <li>mpv</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -128,54 +114,48 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="instalace">Instalace</h1>
-<p>Pro účast jednoho z promítání Cocoa Gang Cinema potřebuješ:</p>
+                <h1 id="mpv">mpv</h1>
+<p><img alt="zde má být obrázek mpv loga" src="../mpv-logo.png" /></p>
+<h2 id="proc-mpv">Proč mpv</h2>
+<p>mpv má několik výhod jako třeba podporu <a href="../instalace-youtube/">přehrávání i YouTube videí, Twitch streamů, ...</a> a built-in podporu na Syncplay chat. Nevýhodou ovšem může pro některé být, že většina ovládání se skrývá za klávesovými zkratkami, ty ovšem po naučení se fungují vždy a jsou rychlejší než používat myš.</p>
+<h2 id="ovladani-mpv">Ovládání mpv</h2>
+<p>Základy ovládání (americké rozložení klávesnice):</p>
 <ul>
-<li><a href="#syncplay">Syncplay</a></li>
-<li><a href="#kompatibilni-multimedialni-prehravace">kompatibilní mediální přehravač</a></li>
+<li>soubory otevřeš přetažením do mpv (online přetažením jejich URL adresy)</li>
+<li>zastavit/pustit - <code>mezerník</code></li>
+<li>5 sekund dozadu/dopředu - <code>šipka vlevo</code>/<code>šipka vpravo</code></li>
+<li>celá obrazovka - <code>f</code></li>
+<li>zeslabit/zesílit - horní tlačítka <code>9</code>/<code>0</code> (proto americké rozložení klávesnice)</li>
 </ul>
-<h2 id="syncplay">Syncplay</h2>
-<p><img alt="zde má být obrázek Syncplay loga" src="../syncplay-logo.png" /></p>
-<h3 id="windows">Windows</h3>
+<p><a href="https://mpv.io/manual/master/#keyboard-control">Další zkratky jsou v angličtině popsány zde v oficiálním webovém manuálu mpv</a>, případně lze také dohledat neoficiální (a bohužel i potenciálně zastaralé) obrázky <a href="https://www.google.com/search?q=mpv+keybindings">na Googlu</a>.</p>
+<h2 id="instalace-mpv">Instalace mpv</h2>
+<h3 id="windows-instalace-mpv">Windows - instalace mpv</h3>
+<p>(poznámka pro technicky zdatnější: v této sekci instalujeme mpv přes scoop.sh, protože shinchiro buildy se Syncplayem nefungují: <a href="https://github.com/Syncplay/syncplay/issues/313)">https://github.com/Syncplay/syncplay/issues/313)</a>)</p>
 <ul>
-<li><a href="https://syncplay.pl/">Stáhneš zde</a></li>
-</ul>
-<h3 id="linux-debian-ubuntu-mint-elementary-popos">Linux - Debian (Ubuntu, Mint, Elementary, Pop!os, ...)</h3>
-<p>(technická poznámka: ačkoliv tento způsob není příliš noob-friendly, syncplay není v základních apt repositories a snap verze blbne/nefunguje/není stabilní)</p>
-<ul>
-<li><a href="https://github.com/Syncplay/syncplay/releases">stáhni první Source code tar.gz</a> (budeš muset trochu zaskrolovat než to najdeš pravděpodobně)</li>
-</ul>
-<p><img alt="screenshot jak ten download vypadá" src="../github-source-code.png" /></p>
-<ul>
-<li>extrahuj</li>
-<li>otevři terminál v extrahované složce:<ul>
-<li><code>sudo apt get update &amp;&amp; sudo apt get upgrade &amp;&amp; sudo apt install -y python3 python3-pip python3-twisted python3-pyside2.qtwidgets python3-certifi git make</code></li>
-<li><code>python3 -m pip install -U pyopenssl service_identity idna</code></li>
-<li><code>sudo make install</code></li>
+<li>v Start menu vyhledej "Windows Powershell" a otevři:<ul>
+<li><code>Set-ExecutionPolicy RemoteSigned -scope CurrentUser</code> a potvrď (vyber tu nejvíce kladnou možnost - chceš provést změny) (po potvrzení by se nic dalšího vypsat již nemělo)</li>
+<li><code>Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')</code></li>
+<li><code>scoop install https://raw.githubusercontent.com/lukesampson/scoop-extras/master/bucket/mpv.json</code><ul>
+<li><u>pokud se ti vypíše</u> něco jako <code>Ke vzdálenému serveru se nelze připojit.</code>, pokračuj následovně (pokud ne, tak vše fungovalo a máš hotovo)</li>
+<li><code>scoop uninstall mpv</code></li>
+<li>počkej třeba 5 minut a zkus poslední příkaz (<code>scoop install https://raw.githubusercontent.com/lukesampson/scoop-extras/master/bucket/mpv.json</code>)</li>
+<li>pokud to stále vypisuje <code>Ke vzdálenému serveru se nelze připojit.</code>, tak buď to můžeš zkusit ještě jednou (zase ten uninstall a potom install) nebo mi napiš</li>
 </ul>
 </li>
 </ul>
-<h2 id="kompatibilni-multimedialni-prehravace">Kompatibilní multimediální přehravače</h2>
-<ul>
-<li><a href="../instalace-zaklad-mpv/">mpv</a> - funguje se Syncplayem nejlépe</li>
-<li><a href="../instalace-zaklad-vlc/">VLC</a> - univerzální alternative</li>
+</li>
 </ul>
-<h3 id="jine">Jiné</h3>
-<p>Pokud jen trochu možné tak <strong>silně nedoporučuji</strong> používat nic jiného než VLC nebo mpv (s tím že mpv funguje nejlépe, akorát má na Windowsu lehce komplikovanější, ačokliv stále jednoduchou, instalaci).</p>
-<p>Na stránce Syncplay si lze najít že podporuje také MPC-HC a MPC-BE, oba tyto přehravače mají ovšem různé nevýhody oproti VLC i mpv.</p>
+<h3 id="linux-debian-ubuntu-mint-elementary-popos-instalace-mpv">Linux - Debian (Ubuntu, Mint, Elementary, Pop!os, ...) - instalace mpv</h3>
+<ul>
+<li>v terminálu:<ul>
+<li><code>sudo apt get update &amp;&amp; sudo apt get upgrade &amp;&amp; sudo apt install -y mpv</code></li>
+</ul>
+</li>
+</ul>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../instalace-youtube/" class="btn btn-neutral float-right" title="🌐 Online videa (10-15 min)">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../ucast/" class="btn btn-neutral" title="❓ Jak se účastnit (<1 min)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -199,10 +179,6 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../ucast/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../instalace-youtube/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

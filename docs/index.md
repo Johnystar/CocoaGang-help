@@ -15,6 +15,11 @@
 - [❓ Jak se účastnit (<1 min)](ucast.md)
 - [⬇️ Základní instalace (5-10 min)](instalace-zaklad.md)
 
+### 🎬 Během účasti (používání softwaru)
+
+- [❓ Ovládání mpv](instalace-zaklad-mpv.md#ovladani-mpv)
+- [❓ Ovládání VLC](instalace-zaklad-vlc.md#ovladani-vlc)
+
 ### ⚠️ Pokročilé
 
 - [🌐 YouTube a další online video (10-15 min)](instalace-youtube.md)
