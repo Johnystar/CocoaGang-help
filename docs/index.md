@@ -1,6 +1,6 @@
 # 🎬 Cocoa Gang Cinema
 
-![Cocoa Gang Cineme header](CGC.png)
+![Cocoa Gang Cineme header](CGC-full.png)
 
 ## 🌲 Rozcestník
 
