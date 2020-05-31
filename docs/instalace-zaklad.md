@@ -11,7 +11,7 @@ Pro účast jednoho z promítání Cocoa Gang Cinema potřebuješ:
 
 ### Windows
 
-- [Stáhneš zde](https://syncplay.pl/)
+- [Stáhneš zde](https://syncplay.pl/) (vpravo vybereš Download Syncplay - verze u které není napsané BETA ani nic podobného a potom stáhneš installer a nainstaluješ)
 
 ### Linux - Debian (Ubuntu, Mint, Elementary, Pop!os, ...)
 
