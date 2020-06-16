@@ -23,7 +23,7 @@ Pro účast jednoho z promítání Cocoa Gang Cinema potřebuješ:
 
 - extrahuj
 - otevři terminál v extrahované složce:
-	- ``sudo apt get update && sudo apt get upgrade && sudo apt install -y python3 python3-pip python3-twisted python3-pyside2.qtwidgets python3-certifi git make``
+	- ``sudo apt update && sudo apt upgrade && sudo apt install -y python3 python3-pip python3-twisted python3-pyside2.qtwidgets python3-certifi git make``
 	- ``python3 -m pip install -U pyopenssl service_identity idna``
 	- ``sudo make install``
 
